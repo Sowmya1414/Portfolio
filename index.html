@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/e61293bf49.js" crossorigin="anonymous"></script>
+
+
+<script src="script.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("bfsw0vY6xhDp3RMiP");
+   })();
+</script>
+
+    <title>Sowmya Sriramula</title>
+</head>
+<body>
+    <section id="Landing-page" onmousemove="moveBackground(event)">
+        <nav>
+            <figure>
+                <!-- <img  id="personal-logo"  src="./Assets/Untitled_logo_3_free-file.jpg" alt=""> -->
+                <h2 id="personal-logo">SOWMYA</h2>
+            </figure>
+            <ul class="nav_link--list">
+                <li class="nav_link" >
+                    <a href="#" class="
+                    nav_link--anchor
+                    link_hover-effect
+                    link_hover-effect--black">
+                    About</a>
+                </li>
+                <li class="nav_link" >
+                    <a href="#projects" class="
+                    nav_link--anchor
+                    link_hover-effect
+                    link_hover-effect--black">
+                    Projects</a>
+                </li>
+                <li class="nav_link" >
+                    <a href="#" class="
+                    nav_link--anchor
+                    link_hover-effect
+                    link_hover-effect--black">
+                    Contact</a>
+                </li>
+                <li class="nav_link click" onclick="toggleContrast()">
+                    <a href="#" class="
+                    nav_link--anchor
+                    link_hover-effect
+                    link_hover-effect--black">
+                    <i class="fas fa-adjust"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <header class="header">
+<div class="header_content">
+    <h1 class="title">Hey</h1>
+    <h1 class="title Orange">
+I'm Sowmya
+    </h1>
+    <p class="header_para">
+        I'm a <b class="Orange"> Frontend Software Engineer</b> with a strong passion for experiences.
+        <br>
+        Here's a bit more <b class="Orange click" onclick="toggleModal()">about me.</b> 
+    </p>
+    <div class="socila_list">
+        <a href="https://www.linkedin.com/in/srilakshmi-sowmya-sriramula-8b3321244/" target="_blank" class="social_link click">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Sowmya1414" target="_blank" class="social_link click">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="./Assets/Sowmya_s_CV.pdf"  target="_blank" class="social_link click">
+            <i class="fas fa-file-pdf"></i>
+        </a>
+    </div>
+</div>
+        </header>
+        <a href="#">
+            <button class="mail_btn click" onclick="toggleModal()">
+                <i class="fas fa-envelope"></i>
+            </button>
+        </a>
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon click">
+
+            </div>
+        </a>
+         <div class="modal">
+            <div class="modal_half modal_about">
+                <h3 class="modal_title">
+                    Here's a bit about me
+                </h3>
+                <h4 class="modal_sub-title modal_sub-title--about">Frontend Software Engineer</h4>
+                <p class="modal_para">
+                I'm a 21 year-old Indian <b class="Orange">frontend software engineer</b> with a strong passion for developing websites with great <b class="Orange">user experiences.</b> 
+                <br>
+                I currently work on a extremely difficuilt engineering problems and learn from a team consisting of some of the most <b class="Orange">talented</b> and <b class="Orange">  experienced</b> software engineers every day.
+                </p>
+                <div class="modal_languages">
+                    <figure class="modal_language">
+                        <img class="modal_language-img" src="./Assets/html.png" alt="" >
+                        <span class="language_name">HTML</span>
+            
+                     </figure>
+                    <figure class="modal_language">
+                        <img class="modal_language-img" src="./Assets/css.png" alt="" >
+                        <span class="language_name">CSS</span>
+            
+                    </figure>
+                    <figure class="modal_language">
+                        <img class="modal_language-img" src="./Assets/javascript.png" alt="" >
+                        <span class="language_name">Javascript</span>
+            
+                    </figure>
+                    <figure class="modal_language">
+                        <img class="modal_language-img" src="./Assets/react.png" alt="" >
+                        <span class="language_name">React</span> 
+            
+                    </figure>
+                    <figure class="modal_language">
+                        <img class="modal_language-img" src="./Assets/node.png" alt="" >
+                        <span class="language_name">Node.js</span>
+            
+                     </figure>
+                    <figure class="modal_language">
+                        <img class="modal_language-img" src="./Assets/mongo.png" alt="" >
+                        <span class="language_name">mongoDB</span>
+            
+                    </figure>
+                    <figure class="modal_language">
+                        <img class="modal_language-img" src="./Assets/express.png" alt="" >
+                        <span class="language_name">Express</span>
+            
+                    </figure>
+                    <figure class="modal_language">
+                        <img class="modal_language-img" src="./Assets/tail.png" alt="" >
+                        <span class="language_name">tailwindCSS</span> 
+            
+                    </figure>
+                </div>
+            </div>
+            <div class="modal_half modal_contact">
+                <i class="fas fa-times modal_exit click" onclick="toggleModal()"></i>
+                <h3 class="modal_title modal_title--contact">
+                lets have a chat
+                </h3>
+                <h4 class="modal_sub-title modal_sub-title--contact">
+                    I'm currently open to new oppurtunities.
+                </h4>
+                <form id="contact_form" onsubmit="contact(event)">
+                    <div class="form_item">
+                        <label class="form_item--label" for="name">Name</label>
+                        <input class="input"  name="user_name" type="text" required></input>
+                    </div>
+                    <div class="form_item">
+                        <label class="form_item--label" for="email">Email</label>
+                        <input class="input"  name="user_email" type="email" required></input>
+                    </div>
+                    <div class="form_item">
+                        <label class="form_item--label" for="message">Message</label>
+                        <textarea class="input"  name="message" type="text"></textarea>
+                    </div>
+                    <button id="contact_submit" class="form_submit">Send it my way</button>
+                </form>
+                <div class="modal_overlay modal_overlay-loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal_overlay modal_overlay-success">
+                   Thanks for the message! Looking forward to speaking with you soon.
+                </div>
+            </div>
+        </div>
+        <img src="Assets/navigation.svg" class="shape shape--0">
+        <img src="Assets/cloud.svg" class="shape shape--1">
+        <img src="Assets/circle.svg" class="shape shape--2">
+        <img src="Assets/trending-up.svg" class="shape shape--3">
+        <img src="Assets/navigation.svg" class="shape shape--4">
+        <img src="Assets/cloud.svg" class="shape shape--5">
+        <img src="Assets/circle.svg" class="shape shape--6">
+        <img src="Assets/trending-up.svg" class="shape shape--7">
+        <img src="Assets/circle.svg" class="shape shape--8">
+
+
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section_title">
+                   Here are some of my <span class="Orange">projects</span>
+                </h1>
+                <ul class="project_list">
+                    <li class="project">
+                        <div class="project_wrapper">
+                            <img src="./Assets/An Online BookStore.png" class="project_img" alt="">
+                            <div class="project_wrapper-bg"></div>
+                            <div class="project_description">
+                                <h3 class="project_description_title">
+                                    Online Book Store
+                                </h3>
+                                <h4 class="project_description_sub-title">
+                                  Html , Css, Javascript
+                                </h4>
+                                <p class="project_description_para">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint reprehenderit dicta ipsam, eaque labore vel itaque. Cumque placeat unde eos!
+                                </p>
+                                <div class="project_description-links">
+                                    <a href="#" class="project_description-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://bookshelfxpress.onrender.com/" class="project_description-link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project_wrapper">
+                            <img src="./Assets/2290827.jpg" class="project_img" alt="">
+                            <div class="project_wrapper-bg"></div>
+                            <div class="project_description">
+                                <h3 class="project_description_title">
+                                    E-portfolio Website
+                                </h3>
+                                <h4 class="project_description_sub-title">
+                                    Html, CSS, Javascript
+                                </h4>
+                                <p class="project_description_para">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint reprehenderit dicta ipsam, eaque labore vel itaque. Cumque placeat unde eos!
+                                </p>
+                                <div class="project_description-links">
+                                    <a href="#" class="project_description-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project_description-link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="projects">
+                        <div class="project_wrapper">
+                            <img src="./Assets/twit.png" class="project_img" alt="">
+                            <div class="project_wrapper-bg"></div>
+                            <div class="project_description">
+                                <h3 class="project_description_title">
+                                   Twitter Backend Clone
+                                </h3>
+                                <h4 class="project_description_sub-title">
+                                    NodeJs | Express | MongoDB
+                                </h4>
+                                <p class="project_description_para">
+                                    Twitter Backend Clone is backend project crafted using Node.js, Express, and MongoDB, this backend project enables seamless image uploads, tweet creation, commenting, liking, and dynamic interactions
+                                </p>
+                                <div class="project_description-links">
+                                    <a href="https://github.com/Sowmya1414/Twitter_Dev" class="project_description-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project_description-link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="conatiner">
+            <div class="row footer_row">
+            <figure>
+                <!-- <img class="footer_logo-img" src="./Assets/Untitled_logo_3_free-file.jpg" alt=""> -->
+                <h1 class="footer_logo-img">SOWMYA</h1>
+
+            </figure>
+           
+            <div class="footer_social-list">
+                <a href="https://github.com/Sowmya1414" class="footer_social-link
+                link_hover-effect
+                link_hover-effect--white">
+                 Github
+                </a>
+                 <a href="https://www.linkedin.com/in/srilakshmi-sowmya-sriramula-8b3321244/" class="footer_social-link
+                link_hover-effect
+                link_hover-effect--white">
+                 LinkedIn
+                </a>
+                <a href="#" class="footer_social-link
+                 link_hover-effect
+                link_hover-effect--white">
+                Contact
+                </a>
+                <a href="./Assets/Sowmya.pdf" class="footer_social-link
+                link_hover-effect
+                 link_hover-effect--white">
+                Resume
+                </a>
+                </div>
+                <div class="footer_copyright">
+                Made by &copy; Sowmya Sriramula
+                
+            </div>
+        </div>
+  </div>
+    </footer>
+</body>
+</html>
