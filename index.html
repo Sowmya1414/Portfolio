@@ -42,7 +42,7 @@
                     link_hover-effect--black">
                     Projects</a>
                 </li>
-                <li class="nav_link" >
+                <li class="nav_link" onclick="toggleModal()">
                     <a href="#" class="
                     nav_link--anchor
                     link_hover-effect
@@ -65,7 +65,7 @@
 I'm Sowmya
     </h1>
     <p class="header_para">
-        I'm a <b class="Orange"> Frontend Software Engineer</b> with a strong passion for experiences.
+        I'm a <b class="Orange"> Frontend Software Engineer</b> with a strong passion for building web applications with great user experiences.
         <br>
         Here's a bit more <b class="Orange click" onclick="toggleModal()">about me.</b> 
     </p>
@@ -76,7 +76,7 @@ I'm Sowmya
         <a href="https://github.com/Sowmya1414" target="_blank" class="social_link click">
             <i class="fab fa-github"></i>
         </a>
-        <a href="./Assets/Sowmya_s_CV.pdf"  target="_blank" class="social_link click">
+        <a href="./Assets/Sowmya's Resume-updated.pdf"  target="_blank" class="social_link click">
             <i class="fas fa-file-pdf"></i>
         </a>
     </div>
@@ -99,7 +99,7 @@ I'm Sowmya
                 </h3>
                 <h4 class="modal_sub-title modal_sub-title--about">Frontend Software Engineer</h4>
                 <p class="modal_para">
-                I'm a 19 year-old Indian <b class="Orange">frontend software engineer</b> with a strong passion for developing websites with great <b class="Orange">user experiences.</b> 
+                I'm a 20 year-old Indian <b class="Orange">frontend software engineer</b> with a strong passion for developing websites with great <b class="Orange">user experiences.</b> 
                 <br>
                 I currently work on a extremely difficuilt engineering problems and learn from a team consisting of some of the most <b class="Orange">talented</b> and <b class="Orange">  experienced</b> software engineers every day.
                 </p>
@@ -198,6 +198,35 @@ I'm Sowmya
                 <ul class="project_list">
                     <li class="project">
                         <div class="project_wrapper">
+                            <img src="./Assets/Your paragraph text.png" class="project_img" alt="">
+                            <div class="project_wrapper-bg"></div>
+                            <div class="project_description">
+                                <h3 class="project_description_title">
+                                    Netflix-GPT
+                                </h3>
+                                <h4 class="project_description_sub-title">
+                                    React | HTML| tailwindCSS |JS |Firebase
+                                </h4>
+                                <p class="project_description_para">
+                                    Netflix GPT is a Frontend application using React.js, Redux, Tailwind CSS, and Firebase for user
+                                    authentication. Implemented an advanced GPT-powered search feature for intelligent movie
+                                    recommendations based on user queries, that allows users to find films according to their interests and
+                                    choices. This project showcases advanced front-end development skills, state management, AI-driven
+                                    features to enhance user experience.    
+                                </p>
+                                <div class="project_description-links">
+                                    <a href="https://github.com/Sowmya1414/Netflix-GPT" class="project_description-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://netflix-gpt-w39w.onrender.com" class="project_description-link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project_wrapper">
                             <img src="./Assets/An Online BookStore.png" class="project_img" alt="">
                             <div class="project_wrapper-bg"></div>
                             <div class="project_description">
@@ -221,31 +250,7 @@ I'm Sowmya
                             </div>
                         </div>
                     </li>
-                    <li class="project">
-                        <div class="project_wrapper">
-                            <img src="./Assets/Portfolio Website.png" class="project_img" alt="">
-                            <div class="project_wrapper-bg"></div>
-                            <div class="project_description">
-                                <h3 class="project_description_title">
-                                    E-portfolio Website
-                                </h3>
-                                <h4 class="project_description_sub-title">
-                                    Html, CSS, Javascript
-                                </h4>
-                                <p class="project_description_para">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint reprehenderit dicta ipsam, eaque labore vel itaque. Cumque placeat unde eos!
-                                </p>
-                                <div class="project_description-links">
-                                    <a href="#" class="project_description-link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="#" class="project_description-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                    
                     <li class="projects">
                         <div class="project_wrapper">
                             <img src="./Assets/twit.png" class="project_img" alt="">
@@ -295,12 +300,12 @@ I'm Sowmya
                 link_hover-effect--white">
                  LinkedIn
                 </a>
-                <a href="#" class="footer_social-link
+                <a href="#" onclick="toggleModal()" class="footer_social-link
                  link_hover-effect
                 link_hover-effect--white">
                 Contact
                 </a>
-                <a href="./Assets/Sowmya_s_CV.pdf" class="footer_social-link
+                <a href="./Assets/Sowmya's Resume-updated.pdf" class="footer_social-link
                 link_hover-effect
                  link_hover-effect--white">
                 Resume
